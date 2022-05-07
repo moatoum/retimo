@@ -1,0 +1,28 @@
+name: retimo
+description: Diabetic Retinopathy Automatic Diagnosis
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  circular_bottom_navigation: ^2.0.0
+  tflite: ^1.1.2
+  image_picker: ^0.8.4+10
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/splashScreen.jpg
+    - assets/images/home_background.jpg
+    - assets/images/mainbg.jpg
+    - assets/tflite/model.tflite
+    - assets/tflite/labels.txt
